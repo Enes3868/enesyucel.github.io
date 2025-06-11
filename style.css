@@ -1,0 +1,460 @@
+/* Fichier: style.css */
+body {
+    font-family: 'Poppins', sans-serif; /* Changer la police de base */
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5; /* Couleur crème très légère */
+    text-align: center;
+    color: #333;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px; /* Augmenter la taille du titre */
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Espacement plus grand */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase; /* Ajouter du texte en majuscules */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9a9e;
+}
+
+main {
+    padding-top: 120px; /* Ajuster le padding après l'header fixe */
+    background: #faf1e6; /* Couleur crème plus douce */
+    color: #333; /* Texte en gris foncé pour un bon contraste */
+}
+
+section {
+    padding: 80px 20px;
+    animation: fadeIn 2s ease-in-out;
+    max-width: 800px;
+    margin: 0 auto; /* Centrer le contenu */
+}
+
+section h2 {
+    font-size: 32px;
+    color: #333; /* Titres en gris foncé pour contraster sur le fond crème */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555; /* Couleur plus claire pour les paragraphes */
+    margin-bottom: 40px;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    margin-bottom: 10px;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+form input {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+form input:focus {
+    border-color: #ff9a9e; /* Changer la couleur de la bordure au focus */
+    outline: none;
+}
+
+/* Fichier: style.css */
+footer {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+.email-link {
+    font-size: 20px;
+    color: #f5f5f5;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    background: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.email-link i {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+
+.email-link:hover {
+    background-color: #ff9a9e; /* Changer la couleur de fond au survol */
+    color: white; /* Changer la couleur du texte au survol */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff9a9e; /* Changer la couleur au survol */
+}
+
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Style pour la section "À propos de moi" */
+#about {
+    background: #A2C8FF; /* Bleu pastel */
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1000px; /* Plus large pour mieux accueillir l'image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox pour aligner le texte et l'image sur la même ligne */
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about2 {
+    background: #d7e5f8; /* Bleu pastel */
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1000px; /* Plus large pour mieux accueillir l'image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox pour aligner le texte et l'image sur la même ligne */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-container {
+    display: flex; /* Aligne les éléments sur la même ligne */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.about-text {
+    flex: 1; /* Le texte occupe la moitié gauche */
+    padding-right: 30px; /* Marge entre le texte et l'image */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+#about h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background-color: #ff9a9e;
+    border-radius: 2px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+#about p::first-letter {
+    font-size: 2rem;
+    color: #2C3E50;
+    font-weight: 600;
+}
+
+/* Section pour l'image */
+.about-image {
+    flex: 1; /* L'image occupe l'autre moitié */
+    display: flex;
+    justify-content: center; /* Centrer l'image horizontalement */
+    align-items: center;
+    padding-left: 30px; /* Un peu de marge à gauche pour l'espacement */
+}
+
+.about-image img {
+    max-width: 90%; /* L'image s'adapte à la taille disponible */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre autour de l'image */
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05); /* Effet de zoom sur l'image */
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column; /* Sur les petits écrans, les éléments se disposeront en colonne */
+        padding: 30px 15px;
+    }
+
+    .about-text {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .about-image img {
+        max-width: 90%; /* Réduit la taille de l'image sur les petits écrans */
+    }
+}
+/* Séparation avec une ligne noire épaisse */
+.black-separator {
+    width: 100%;
+    height: 75px; /* Épaisseur de la ligne (environ 2 cm) */
+    background-color: #000; /* Couleur de la ligne, ici noire */
+    margin: 50px 0; /* Espacement autour de la ligne */
+}
+
+/* Autres styles pour la section Mes Projets */
+#projects {
+    background: #f4f4f4; /* Fond gris clair */
+    padding: 50px 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+#projects h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background-color: #ff9a9e;
+    border-radius: 2px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.column {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+}
+h2 {
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #007BFF;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espace entre les projets */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+
+#parcours {
+  padding: 60px 20px;
+  background-color: #f9fbff;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#parcours h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 30px;
+  border-left: 3px solid #007BFF;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #007BFF;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #007BFF44;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #007BFF;
+}
+
+.timeline-date {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+}
+
