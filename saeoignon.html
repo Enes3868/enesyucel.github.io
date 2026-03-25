@@ -7,14 +7,30 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-  <main>
+<main>
+  <section id="pdf">
+    <h2>Sujet</h2>
 
-    <section id="pdf" style="text-align: center;">
-      <h2>Sujet</h2>
-        <iframe src="saeoignon.pdf" width="100%" height="600px" style="border: none;">
-        </iframe>
+    <div style="max-width: 800px; margin: auto; text-align: center;">
+
+      <img 
+        src="pdf-preview.png" 
+        alt="Aperçu du projet"
+        style="max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px;"
+      >
+
+      <embed 
+        src="sae.pdf#toolbar=1&navpanes=0&scrollbar=1" 
+        type="application/pdf" 
+        width="100%" 
+        height="600px"
+        style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);"
+      />
+
+      <br><br>
 
       <p>
         <strong>Objectif principal :</strong><br>
@@ -27,26 +43,23 @@
         Garantir la confidentialité et l’anonymat des communications sur un réseau distribué.
       </p>
 
-      <br>
+    </div>
+    <br>
+  </section>
 
-    
+  <div class="black-separator"></div>
 
-    </section>
+  <section id="github">
+    <h2>GitHub du projet</h2>
+    <a href="https://github.com/Enes3868/SAE_traiter_donnees" target="_blank" class="btn">
+      <i class="fab fa-github"></i> Voir mon GitHub
+    </a>
+  </section>
+</main>
 
-    <div class="black-separator"></div>
-
-    <section id="github">
-      <h2>GitHub du projet</h2>
-      <a href="https://github.com/Guillaume-8/Poussins" target="_blank" class="btn">
-        <i class="fab fa-github"></i> Voir mon GitHub
-      </a>
-    </section>
-
-  </main>
-
-  <div style="text-align:center; margin:20px;">
-    <a href="index.html#projects" class="btn">Retour</a>
-  </div>
+<div style="text-align:center; margin:20px;">
+  <a href="index.html#projects" class="btn">Retour</a>
+</div>
 
 </body>
 </html>
