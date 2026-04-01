@@ -1,65 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projet</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routage en Oignon & Anonymat | Huseyin-Enes YUCEL</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<main>
-  <section id="pdf">
-    <h2>Sujet</h2>
+    <header>
+        <div class="logo">Huseyin-Enes<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#projects">Projets</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div style="max-width: 800px; margin: auto; text-align: center;">
+    <main style="padding-top: 100px;">
+        <section class="section-wrap reveal visible">
+            <div class="section-label">Cybersécurité & Réseaux</div>
+            <h1 class="section-title">Système de <em>Communication Anonyme</em></h1>
 
-      <img 
-        src="pdf-preview.png" 
-        alt="Aperçu du projet"
-        style="max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px;"
-      >
+            <div class="hero-image-wrap" style="flex-direction: column; gap: 20px; margin-bottom: 50px;">
+                <img src="pdf-preview.png" alt="Aperçu du projet" style="width: 100%; max-width: 800px; border-radius: var(--radius); border: 1px solid rgba(0,0,0,0.05);">
+                
+                <embed 
+                    src="sae.pdf#toolbar=1&navpanes=0&scrollbar=1" 
+                    type="application/pdf" 
+                    width="100%" 
+                    height="600px"
+                    style="border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(37,99,235,0.1);"
+                >
+            </div>
 
-      <embed 
-        src="sae.pdf#toolbar=1&navpanes=0&scrollbar=1" 
-        type="application/pdf" 
-        width="100%" 
-        height="600px"
-        style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);"
-      />
+            <div class="skills-grid">
+                <div class="comp-card">
+                    <h2>Principe du Projet</h2>
+                    <p style="color: var(--ink-soft); line-height: 1.7;">
+                        L'objectif était de concevoir un système de communication où l'anonymat est garanti par le <strong>routage en oignon</strong>. Chaque message traverse une chaîne de routeurs virtuels où chaque nœud ne connaît que l'identité de son voisin direct.
+                    </p>
+                    <div class="pills" style="margin-top: 20px;">
+                        <span class="pill">Routage en Oignon</span>
+                        <span class="pill">Confidentialité</span>
+                        <span class="pill">Réseaux Distribués</span>
+                    </div>
+                </div>
 
-      <br><br>
+                <div class="skills-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h2>Objectifs Clés</h2>
+                        <ul style="list-style: none; font-size: 0.9rem; color: var(--muted);">
+                            <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--blue);"></i> Implémentation de routeurs virtuels</li>
+                            <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--blue);"></i> Chiffrement des couches de données</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--blue);"></i> Protection contre l'analyse de trafic</li>
+                        </ul>
+                    </div>
 
-      <p>
-        <strong>Objectif principal :</strong><br>
-        Concevoir et implémenter un système de communication anonyme entre plusieurs clients à l'aide de routeurs virtuels.<br><br>
+                    <div style="margin-top: 30px;">
+                        <a href="https://github.com/Enes3868/SAE_traiter_donnees" target="_blank" class="hero-cta" style="width: 100%; justify-content: center;">
+                            <i class="fab fa-github"></i> Voir le code source
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        <strong>Principe clé :</strong><br>
-        Assurer l’anonymat grâce au routage en oignon, basé sur une chaîne de routeurs où chaque nœud ne connaît que son voisin direct.<br><br>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="index.html#projects" class="btn" style="background: var(--blue-pale); color: var(--blue);">
+                    <i class="fas fa-chevron-left"></i> Retour aux projets
+                </a>
+            </div>
+        </section>
+    </main>
 
-        <strong>Pourquoi ?</strong><br>
-        Garantir la confidentialité et l’anonymat des communications sur un réseau distribué.
-      </p>
-
-    </div>
-    <br>
-  </section>
-
-  <div class="black-separator"></div>
-
-  <section id="github">
-    <h2>GitHub du projet</h2>
-    <a href="https://github.com/Enes3868/SAE_traiter_donnees" target="_blank" class="btn">
-      <i class="fab fa-github"></i> Voir mon GitHub
-    </a>
-  </section>
-</main>
-
-<div style="text-align:center; margin:20px;">
-  <a href="index.html#projects" class="btn">Retour</a>
-</div>
+    <footer>
+        <p class="copy">© 2026 Huseyin-Enes YUCEL. Expertise en Réseaux & Télécoms.</p>
+    </footer>
 
 </body>
 </html>
