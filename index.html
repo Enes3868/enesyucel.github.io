@@ -1,297 +1,257 @@
+<!-- Fichier: index.html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huseyin-Enes YUCEL — Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Mon Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <!-- ===== HEADER ===== -->
-    <header id="main-header">
-        <div class="logo">H-E <span>Yucel</span></div>
+    <header>
+        <h1>Huseyin-Enes YUCEL</h1>
         <nav>
             <ul>
-                <li><a href="#hero">À propos</a></li>
+                <li><a href="#about">À propos</a></li>
                 <li><a href="#parcours">Parcours</a></li>
                 <li><a href="#comp">Compétences</a></li>
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
+
             </ul>
         </nav>
     </header>
 
-    <!-- ===== HERO ===== -->
-    <section id="hero">
-        <div class="hero-text">
-            <div class="hero-tag">Étudiant BUT Réseaux & Télécom</div>
-            <h1>Huseyin-Enes<br><em>YUCEL</em></h1>
-            <p>Passionné par les réseaux et la cybersécurité, je suis en 2ᵉ année de BUT RT à l'IUT de Colmar. Mon objectif : intégrer un Master en cybersécurité et construire une carrière solide dans ce domaine.</p>
-            <a href="#contact" class="hero-cta">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                Me contacter
-            </a>
-        </div>
-        <div class="hero-image-wrap">
-            <img src="UHA_cartouche.png" alt="Logo UHA" />
-        </div>
-    </section>
+    <main>
+        <section id="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>À propos de moi</h2>
+                    <p>Je suis un étudiant en 2ème année de BUT en Réseaux et télécommunications. Mon objectif est de poursuivre en cybersécurité et de commencer ma carrière après un Master.</p>
+                </div>
+                <div class="about-image">
+                    <img src="UHA_cartouche.png" alt="Mon image" />
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+            <div class="black-separator"></div> 
 
-    <div class="divider"></div>
 
-    <!-- ===== PARCOURS ===== -->
-    <section id="parcours">
-        <div class="section-wrap">
-            <div class="section-label">Formation</div>
-            <h2 class="section-title">Mon Parcours Scolaire</h2>
+        <section id="parcours">
+            <h2>Mon Parcours Scolaire</h2>
+            <div class="timeline">
 
-            <div class="timeline reveal">
-
-                <div class="tl-item">
-                    <div class="tl-dot"></div>
-                    <div class="tl-card">
-                        <h3>BUT Réseaux et Télécommunications</h3>
-                        <p><strong>IUT de Colmar</strong></p>
-                        <span class="tl-date">2024 — 2027</span>
-                    </div>
+                <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>BUT Réseaux et télécommunications</h3>
+                    <p><strong>IUT de Colmar</strong></p>
+                    <p class="timeline-date">2024-2027</p>
+                </div>
                 </div>
 
-                <div class="tl-item">
-                    <div class="tl-dot"></div>
-                    <div class="tl-card">
-                        <h3>Baccalauréat Général</h3>
-                        <p>Spécialité SIN — <strong>Lycée Blaise Pascal, Colmar</strong></p>
-                        <span class="tl-date">2020 — 2023</span>
-                    </div>
+                <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Baccalauréat Général</h3>
+                    <p><strong>Spécialités :</strong> SIN</p>
+                    <p><strong>Lycée Blaise Pascal, Colmar</strong></p>
+                    <p class="timeline-date">2020 - 2023</p>
+                </div>
                 </div>
 
-                <div class="tl-item">
-                    <div class="tl-dot"></div>
-                    <div class="tl-card">
-                        <h3>Brevet des Collèges</h3>
-                        <p><strong>Collège Saint André</strong></p>
-                        <span class="tl-date">2016 — 2020</span>
-                    </div>
+                <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Brevet des Collèges</h3>
+                    <p><strong>Collège Saint Andre</strong></p>
+                    <p class="timeline-date">2016 - 2020</p>
+                </div>
                 </div>
 
             </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="divider"></div>
+        <div class="black-separator"></div> 
+        
 
-    <!-- ===== COMPÉTENCES ===== -->
-    <section id="comp">
-        <div class="section-wrap">
-            <div class="section-label">Apprentissages</div>
-            <h2 class="section-title">Compétences</h2>
+        <section id="comp">
+            <div class="container">
 
-            <div class="comp-grid reveal">
-                <!-- BUT 1 -->
-                <div class="comp-card">
+                <div class="column">
                     <h2>BUT 1</h2>
+        
                     <h3>Administrer</h3>
                     <ul>
-                        <li>Maîtriser les lois fondamentales de l'électricité</li>
-                        <li>Comprendre l'architecture des systèmes numériques</li>
-                        <li>Configurer les fonctions de base du réseau local</li>
-                        <li>Maîtriser les systèmes d'exploitation pour l'admin réseau</li>
-                        <li>Identifier les dysfonctionnements du réseau local</li>
-                        <li>Installer un poste client</li>
+                        <li>AC11.01 | Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements réseaux</li>
+                        <li>AC11.02 | Comprendre l'architecture des systèmes numériques et de l’Internet</li>
+                        <li>AC11.03 | Configurer les fonctions de base du réseau local</li>
+                        <li>AC11.04 | Maîtriser les systèmes d’exploitation pour l’administration réseau</li>
+                        <li>AC11.05 | Identifier les dysfonctionnements du réseau local</li>
+                        <li>AC11.06 | Installer un poste client</li>
                     </ul>
+        
                     <h3>Connecter</h3>
                     <ul>
-                        <li>Mesurer, analyser et commenter les signaux</li>
-                        <li>Caractériser des systèmes de transmission</li>
-                        <li>Déployer des supports de transmission</li>
-                        <li>Connecter les systèmes de ToIP</li>
-                        <li>Adapter sa communication à un interlocuteur</li>
+                        <li>AC12.01 | Mesurer, analyser et commenter les signaux</li>
+                        <li>AC12.02 | Caractériser des systèmes de transmission</li>
+                        <li>AC12.03 | Déployer des supports de transmission</li>
+                        <li>AC12.04 | Connecter les systèmes de ToIP</li>
+                        <li>AC12.05 | Adapter sa communication à un interlocuteur</li>
                     </ul>
+        
                     <h3>Programmer</h3>
                     <ul>
-                        <li>Utiliser un système informatique</li>
-                        <li>Lire, corriger et modifier un programme</li>
-                        <li>Traduire un algorithme</li>
-                        <li>Connaître l'architecture Web</li>
-                        <li>Gérer les données d'une application</li>
+                        <li>AC13.01 | Utiliser un système informatique</li>
+                        <li>AC13.02 | Lire, corriger et modifier un programme</li>
+                        <li>AC13.03 | Traduire un algorithme</li>
+                        <li>AC13.04 | Connaître l’architecture Web</li>
+                        <li>AC13.05 | Gérer les données d’une application</li>
+                        <li>AC13.06 | Travailler en environnement collaboratif</li>
                     </ul>
                 </div>
-
-                <!-- BUT 2 -->
-                <div class="comp-card">
+        
+                <div class="column">
                     <h2>BUT 2</h2>
+        
                     <h3>Administrer</h3>
                     <ul>
-                        <li>Configurer et dépanner le routage dynamique</li>
-                        <li>Mettre en place QoS et sécurité réseau</li>
-                        <li>Déployer postes clients et virtualisation</li>
-                        <li>Déployer des services réseaux avancés</li>
-                        <li>Comprendre les réseaux opérateurs</li>
+                        <li>AC21.01 | Configurer et dépanner le routage dynamique</li>
+                        <li>AC21.02 | Mettre en place QoS et sécurité réseau</li>
+                        <li>AC21.03 | Déployer postes clients et virtualisation</li>
+                        <li>AC21.04 | Déployer des services réseaux avancés</li>
+                        <li>AC21.05 | Comprendre les réseaux opérateurs</li>
+                        <li>AC21.06 | Travailler en équipe</li>
                     </ul>
+                        <br>
                     <h3>Connecter</h3>
                     <ul>
-                        <li>Déployer des systèmes de transmission complexes</li>
-                        <li>Mettre en place un accès distant sécurisé</li>
-                        <li>Connecter plusieurs sites</li>
-                        <li>Déployer des réseaux d'accès opérateurs</li>
-                        <li>Analyser un cahier des charges RT</li>
+                        <li>AC22.01 | Déployer des systèmes de transmission complexes</li>
+                        <li>AC22.02 | Mettre en place un accès distant sécurisé</li>
+                        <li>AC22.03 | Connecter plusieurs sites</li>
+                        <li>AC22.04 | Déployer des réseaux d’accès opérateurs</li>
+                        <li>AC22.05 | Analyser un cahier des charges RT</li>
                     </ul>
+        
                     <h3>Programmer</h3>
                     <ul>
-                        <li>Automatiser avec des scripts</li>
-                        <li>Développer une application Web/mobile</li>
-                        <li>Programmer en client/serveur</li>
-                        <li>Administrer une base de données</li>
-                        <li>Exploiter des données dans une application</li>
+                        <li>AC23.01 | Automatiser avec des scripts</li>
+                        <li>AC23.02 | Développer une application Web/mobile</li>
+                        <li>AC23.03 | Programmer en client/serveur</li>
+                        <li>AC23.04 | Administrer une base de données</li>
+                        <li>AC23.05 | Exploiter des données dans une application</li>
+                    </ul>
+                </div>
+        
+            </div>
+        
+        <div class="black-separator"></div>
+        
+            <div class="container">
+                <div class="column">
+                    <h2>Soft Skills</h2>
+                    <ul>
+                        <li>Travail en équipe</li>
+                        <li>Autonomie</li>
+                        <li>Adaptabilité</li>
+                        <li>Organisation</li>
+                        <li>Communication</li>
+                        <li>Esprit d’analyse</li>
+                    </ul>
+                </div>
+        
+                <div class="column">
+                    <h2>Hard Skills</h2>
+                    <ul>
+                        <li>HTML / CSS</li>
+                        <li>Python</li>
+                        <li>Bash / PowerShell</li>
+                        <li>Linux / Windows / macOS</li>
+                        <li>Virtualisation (VMWare, VirtualBox)</li>
+                        <li>Réseaux (Cisco, GNS3, Eve-NG)</li>
+                        <li>Active Directory</li>
+                        <li>Pentest / Firewall</li>
                     </ul>
                 </div>
             </div>
+        </section>
+        <div class="black-separator"></div>
 
-            <!-- Soft / Hard Skills -->
-            <div class="skills-grid reveal">
-                <div class="skills-card">
-                    <h2>Soft Skills</h2>
-                    <div class="pills">
-                        <span class="pill soft">Travail en équipe</span>
-                        <span class="pill soft">Autonomie</span>
-                        <span class="pill soft">Adaptabilité</span>
-                        <span class="pill soft">Organisation</span>
-                        <span class="pill soft">Communication</span>
-                        <span class="pill soft">Esprit d'analyse</span>
-                    </div>
+    
+
+        
+        
+
+        <section id="projects">
+            <h2>Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="IMG_0876(1).jpeg" alt="projet Création réseau local">
+                        <p>Faire le réseau LAN d'une entreprise avec eveNG.</p>
+                        <a href="sae1.html" class="btn"> Détails </a>
                 </div>
-                <div class="skills-card">
-                    <h2>Hard Skills</h2>
-                    <div class="pills">
-                        <span class="pill">HTML / CSS</span>
-                        <span class="pill">Python</span>
-                        <span class="pill">Bash / PowerShell</span>
-                        <span class="pill">Linux / Windows / macOS</span>
-                        <span class="pill">VMWare · VirtualBox</span>
-                        <span class="pill">Cisco · GNS3 · Eve-NG</span>
-                        <span class="pill">Active Directory</span>
-                        <span class="pill">Pentest · Firewall</span>
-                    </div>
+
+                <div class="project">
+                    <img src="sae2.png" alt="Projet 2">
+                        <p>Interface PowerShell pour traiter les données</p>
+                        <a href="sae2.html" class="btn"> Détails </a>
+
                 </div>
+            
+            <div class="project">
+                    <img src="sae3.png" alt="Projet 3">
+                        <p>Construction d'un réseau local</p>
+                        <a href="sae3.html" class="btn"> Détails </a>
+
+                </div>
+
+                <div class="project">
+                    <img src="django.png" alt="Projet 4">
+                        <p>Projet Django</p>
+                        <a href="sae4.html" class="btn"> Détails </a>
+
+                </div>
+                 <div class="project">
+                    <img src="gif.png" alt="Projet 4">
+                        <p>D'autres projets + GIF avec Python</p>
+                        <a href="gif.html" class="btn"> Détails </a>
+
+                </div>
+                  <div class="project">
+                    <img src="tor.svg" alt="Projet 4">
+                        <p>Routage Oignon</p>
+                        <a href="saeoignon.html" class="btn"> Détails </a>
+
+                </div>
+            </div>    
+                
             </div>
+        </section>
 
-        </div>
-    </section>
+        
+    </main>
 
-    <div class="divider"></div>
-
-    <!-- ===== PROJETS ===== -->
-    <section id="projects">
-        <div class="section-wrap">
-            <div class="section-label">Réalisations</div>
-            <h2 class="section-title">Mes Projets</h2>
-
-            <div class="projects-grid reveal">
-
-                <div class="project-card">
-                    <div class="project-img-wrap">
-                        <img src="IMG_0876(1).jpeg" alt="Réseau LAN entreprise">
-                    </div>
-                    <div class="project-body">
-                        <p>Faire le réseau LAN d'une entreprise avec Eve-NG.</p>
-                        <a href="sae1.html" class="btn">Voir le projet →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-wrap">
-                        <img src="sae2.png" alt="Interface PowerShell">
-                    </div>
-                    <div class="project-body">
-                        <p>Interface PowerShell pour traiter les données.</p>
-                        <a href="sae2.html" class="btn">Voir le projet →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-wrap">
-                        <img src="sae3.png" alt="Réseau local">
-                    </div>
-                    <div class="project-body">
-                        <p>Construction d'un réseau local.</p>
-                        <a href="sae3.html" class="btn">Voir le projet →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-wrap">
-                        <img src="django.png" alt="Projet Django">
-                    </div>
-                    <div class="project-body">
-                        <p>Projet Django — développement d'une application Web.</p>
-                        <a href="sae4.html" class="btn">Voir le projet →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-wrap">
-                        <img src="gif.png" alt="Python GIF">
-                    </div>
-                    <div class="project-body">
-                        <p>D'autres projets + génération de GIF avec Python.</p>
-                        <a href="gif.html" class="btn">Voir le projet →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img-wrap">
-                        <img src="tor.svg" alt="Routage Oignon">
-                    </div>
-                    <div class="project-body">
-                        <p>Routage Oignon — exploration du réseau Tor.</p>
-                        <a href="saeoignon.html" class="btn">Voir le projet →</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
     <footer id="contact">
-        <p class="foot-title">Travaillons ensemble</p>
-        <p class="foot-sub">N'hésitez pas à me contacter pour tout projet ou opportunité.</p>
-        <div class="contact-links">
+        <p>Contactez moi :</p>
+        <div class="contact-info">
             <a href="mailto:enesyucel38@icloud.com" class="email-link">
-                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-                enesyucel38@icloud.com
-            </a>
-            <a href="mailto:huseyin-enes.yucel@uha.fr" class="email-link">
-                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-                huseyin-enes.yucel@uha.fr
+                <i class="fas fa-envelope"></i> enesyucel38@icloud.com
             </a>
         </div>
-        <p class="copy">© 2025 Huseyin-Enes Yucel — Tous droits réservés</p>
+        <div class="contact-info">
+            <a href="mailto:contact@uha.fr" class="email-link">
+                <i class="fas fa-envelope"></i> huseyin-enes.yucel@uha.fr
+            </a>
+        </div>
     </footer>
 
-    <script>
-        // Sticky header shadow
-        const header = document.getElementById('main-header');
-        window.addEventListener('scroll', () => {
-            header.classList.toggle('scrolled', window.scrollY > 20);
-        });
-
-        // Scroll reveal
-        const reveals = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    e.target.classList.add('visible');
-                    observer.unobserve(e.target);
-                }
-            });
-        }, { threshold: 0.1 });
-        reveals.forEach(r => observer.observe(r));
-    </script>
-
+    
 </body>
 </html>
