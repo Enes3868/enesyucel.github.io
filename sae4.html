@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projet</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Web & Bases de Données | Huseyin-Enes YUCEL</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
+    <header>
+        <div class="logo">Huseyin-Enes<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#projects">Projets</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section id="pdf" style="text-align: center;">
-    <h2>Sujet</h2>
-    <img src="djangoo.png" alt="Projet 3" style="max-width: 100%; height: auto;">
-      <br>
-      <p> Dans ce projet, j'ai configuré des VM pour pouvoir faire la base de données de notre site et de les stocker ainsi que l'hébergement du site avec Apache.
+    <main style="padding-top: 100px;">
+        <section class="section-wrap reveal visible">
+            <div class="section-label">Développement Web & Système</div>
+            <h1 class="section-title">Infrastructure <em>Django & VM</em></h1>
 
-Cette SAE m'a permis de developer la compétence du BUT RT : UE3 [Programmer] et notamment les apprentissages critiques : AC13.01 : Utiliser un système informatique et ses outils, AC13.02 | Lire, exécuter, corriger et modifier un programme, AC13.04 | Connaître l’architecture et les technologies d’un site Web.</p>
-    </section>
+            <div class="hero-image-wrap" style="margin-bottom: 50px;">
+                <img src="djangoo.png" alt="Aperçu Projet Django" style="width: 100%; max-width: 900px; border-radius: var(--radius); border: 1px solid rgba(0,0,0,0.1);">
+            </div>
 
+            <div class="skills-grid">
+                <div class="comp-card">
+                    <h2>Configuration & Hébergement</h2>
+                    <p style="color: var(--ink-soft); line-height: 1.7; margin-bottom: 20px;">
+                        Dans ce projet, j'ai orchestré le déploiement d'une application <strong>Django</strong> en configurant des machines virtuelles (VM) pour la gestion des bases de données. L'hébergement et l'exposition du site ont été réalisés via un serveur <strong>Apache</strong>.
+                    </p>
+                    <div class="pills">
+                        <span class="pill">Django</span>
+                        <span class="pill">Virtual Machines</span>
+                        <span class="pill">Apache HTTP</span>
+                        <span class="pill">PostgreSQL/MySQL</span>
+                    </div>
+                </div>
 
+                <div class="skills-card">
+                    <h2>Compétences & Code</h2>
+                    <h3 style="margin-top: 0;">Apprentissages Critiques (UE3)</h3>
+                    <ul style="list-style: none; padding-bottom: 20px;">
+                        <li style="font-size: 0.85rem; padding: 5px 0;"><strong>AC13.01 :</strong> Outils informatiques</li>
+                        <li style="font-size: 0.85rem; padding: 5px 0;"><strong>AC13.02 :</strong> Correction de programme</li>
+                        <li style="font-size: 0.85rem; padding: 5px 0;"><strong>AC13.04 :</strong> Technologies Web</li>
+                    </ul>
 
-       <div class="black-separator"></div>
+                    <a href="https://github.com/Enes3868/TP-209-imagination" target="_blank" class="hero-cta" style="width: 100%; justify-content: center;">
+                        <i class="fab fa-github"></i> Explorer le dépôt GitHub
+                    </a>
+                </div>
+            </div>
 
-    <section id="github">
-      <h2>GitHub exemple du projet</h2>
-      <a href="https://github.com/Enes3868/TP-209-imagination" target="_blank" class="btn">
-        <i class="fab fa-github"></i> Voir mon GitHub
-      </a>
-    </section>
-   </main>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="index.html#projects" class="btn" style="background: var(--blue-pale); color: var(--blue);">
+                    <i class="fas fa-arrow-left"></i> Retour au portfolio
+                </a>
+            </div>
+        </section>
+    </main>
 
-<a href="index.html#projects" class="btn">Retour</a>
+    <footer>
+        <p class="copy">© 2026 Huseyin-Enes YUCEL. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
