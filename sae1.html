@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projet</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Projet | Huseyin-Enes YUCEL</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<main>
-  <section id="pdf">
-    <h2>Sujet</h2>
+    <header>
+        <div class="logo">Huseyin-Enes<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#projects">Projets</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div style="max-width: 800px; margin: auto;">
+    <main style="padding-top: 100px;"> <section class="section-wrap reveal visible">
+            <div class="section-label">Documentation</div>
+            <h1 class="section-title">Sujet de la SAE</h1>
 
-      <embed 
-        src="sae1.pdf#toolbar=1&navpanes=0&scrollbar=1" 
-        type="application/pdf" 
-        width="100%" 
-        height="600px"
-        style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);"
+            <div class="hero-image-wrap" style="flex-direction: column; gap: 30px; animation: slideUp 0.8s ease;">
+                
+                <embed 
+                    src="sae1.pdf#toolbar=1&navpanes=0&scrollbar=1" 
+                    type="application/pdf" 
+                    width="100%" 
+                    height="700px"
+                    style="border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(37,99,235,0.1);"
+                >
 
+                <div class="comp-card" style="width: 100%; text-align: left;">
+                    <h2 style="font-size: 1.2rem; border-bottom: 2px solid var(--blue-pale); margin-bottom: 15px;">
+                        Analyse du projet
+                    </h2>
+                    <p style="color: var(--ink-soft); line-height: 1.8; font-size: 1rem;">
+                        Ce projet m'a permis de mettre en place les compétences sur la <strong>configuration de switch, routeur et de serveur</strong>. 
+                        J'ai ainsi réussi à établir une connexion fonctionnelle au sein du LAN.
+                    </p>
+                    
+                    <h3 style="color: var(--blue); font-size: 0.8rem; text-transform: uppercase; margin-top: 20px;">
+                        Compétences BUT RT : UE1 [Administrer]
+                    </h3>
+                    <div class="pills" style="margin-top: 10px;">
+                        <span class="pill">AC11.03 : Configuration réseau local</span>
+                        <span class="pill">AC11.05 : Identification de dysfonctionnements</span>
+                    </div>
+                </div>
 
-      <p>
-        Ce projet m'a permis de mettre en place les compétences sur la configuration 
-        de switch, routeur et de serveur. J'ai ainsi réussi à mettre une connexion du LAN.
+                <div style="margin-top: 20px;">
+                    <a href="index.html#projects" class="hero-cta">
+                        <i class="fas fa-arrow-left"></i> Retour aux projets
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        Cette SAE m'a permis de développer la compétence du BUT RT : UE1 [Administrer] 
-        et notamment les apprentissages critiques : AC11.03 : Configurer les fonctions 
-        de base du réseau local, AC11.05 : Identifier les dysfonctionnements du réseau 
-        local et savoir les signaler.
-      </p>
+    </main>
 
-    </div>
-
-    <br>
-  </section>
-
-  <a href="index.html#projects" class="btn">Retour</a>
-
-</main>
+    <footer>
+        <p class="copy">© 2024 Huseyin-Enes YUCEL. Tous droits réservés.</p>
+    </footer>
 
 </body>
 </html>
