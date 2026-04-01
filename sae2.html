@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon CV & GitHub</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Python & GitHub | Huseyin-Enes YUCEL</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<main>
-  <section id="pdf">
-    <h2>Sujet</h2>
+    <header>
+        <div class="logo">Huseyin-Enes<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#projects">Projets</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div style="max-width: 800px; margin: auto;">
+    <main style="padding-top: 100px;">
+        
+        <section class="section-wrap reveal visible">
+            <div class="section-label">Développement</div>
+            <h1 class="section-title">Traitement de données <em>Python</em></h1>
 
-      <embed 
-        src="sae.pdf#toolbar=1&navpanes=0&scrollbar=1" 
-        type="application/pdf" 
-        width="100%" 
-        height="600px"
-        style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);"
-      
-      <p>
-        Durant ce projet, j'ai mis en place un code Python qui permet de sélectionner 
-        les fichiers pour ensuite pouvoir les supprimer. Nous avons de même configuré 
-        une interface pour sélectionner et traiter les données.
+            <div class="hero-image-wrap" style="margin-bottom: 40px;">
+                <embed 
+                    src="sae.pdf#toolbar=1&navpanes=0&scrollbar=1" 
+                    type="application/pdf" 
+                    width="100%" 
+                    height="600px"
+                    style="border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,0.05);"
+                >
+            </div>
 
-        Cette SAE m'a permis de développer la compétence du BUT RT : UE3 [Programmer] 
-        et notamment les apprentissages critiques : AC13.02 | Lire, exécuter, corriger 
-        et modifier un programme, AC13.06 | S’intégrer dans un environnement propice 
-        au développement et au travail collaboratif.
-      </p>
+            <div class="skills-grid">
+                
+                <div class="comp-card">
+                    <h2>Analyse du projet</h2>
+                    <p style="color: var(--ink-soft); line-height: 1.7; margin-bottom: 20px;">
+                        Durant ce projet, j'ai développé un script <strong>Python</strong> permettant la sélection intelligente et la suppression de fichiers. 
+                        Nous avons également conçu une interface utilisateur dédiée au traitement fluide des données.
+                    </p>
+                    
+                    <h3>Compétences BUT RT : UE3 [Programmer]</h3>
+                    <div class="pills">
+                        <span class="pill">AC13.02 | Debug & Correction</span>
+                        <span class="pill">AC13.06 | Travail collaboratif</span>
+                    </div>
+                </div>
 
-    </div>
-    <br>
-  </section>
+                <div class="skills-card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    <i class="fab fa-github" style="font-size: 3rem; color: var(--ink); margin-bottom: 15px;"></i>
+                    <h2>Code Source</h2>
+                    <p style="margin-bottom: 25px; color: var(--muted);">Retrouvez l'intégralité du script et de l'historique de développement sur GitHub.</p>
+                    <a href="https://github.com/Enes3868/SAE_traiter_donnees" target="_blank" class="hero-cta">
+                        <i class="fab fa-github"></i> Voir le dépôt
+                    </a>
+                </div>
 
-  <div class="black-separator"></div>
+            </div>
 
-  <section id="github">
-    <h2>GitHub du projet</h2>
-    <a href="https://github.com/Enes3868/SAE_traiter_donnees" target="_blank" class="btn">
-      <i class="fab fa-github"></i> Voir mon GitHub
-    </a>
-  </section>
-</main>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="index.html#projects" class="btn" style="background: var(--blue-pale); color: var(--blue);">
+                    <i class="fas fa-chevron-left"></i> Retour au portfolio
+                </a>
+            </div>
 
-<a href="index.html#projects" class="btn">Retour</a>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copy">© 2026 Huseyin-Enes YUCEL. Tous droits réservés.</p>
+    </footer>
 
 </body>
 </html>
