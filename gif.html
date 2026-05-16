@@ -3,101 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project/title</title>
+    <title>Projets SAE — Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
-<main>
+    <header id="site-header">
+        <div class="logo">Enes <span>Yucel</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#parcours">Parcours</a></li>
+                <li><a href="index.html#projects">Projets</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="pdf" style="text-align: center;">
-<h2>SAE2.02 Mesurer et caractériser un signal ou un système</h2>
+    <main>
+        <div class="section-wrap">
 
-<p>
-Dans cet SAE, on a créé un web radio avec Arduino IDE qui a permis de pouvoir contrôler la radio avec notre téléphone.
-</p>
+            <div class="section-label">Projets</div>
+            <h2 class="section-title">Mes SAE</h2>
 
-<p>
-Cette SAE m'a permis de developer la compétence du BUT RT : UE2 [Connecter] et notamment les apprentissages critiques :
-AC12.02 : Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement,
-AC12.03 : Déployer des supports de transmission.
-</p>
+            <!-- SAE 2.02 -->
+            <div class="tl-item reveal">
+                <div class="tl-card">
+                    <h3>SAE 2.02 — Mesurer et caractériser un signal ou un système</h3>
+                    <p>Dans cette SAE, nous avons créé une web radio avec Arduino IDE permettant de contrôler la radio depuis un téléphone.</p>
+                    <p>Compétence BUT RT : <strong>UE2 [Connecter]</strong></p>
+                    <div class="pills">
+                        <span class="pill">AC12.02 — Modélisation des transmissions</span>
+                        <span class="pill">AC12.03 — Déployer des supports de transmission</span>
+                    </div>
+                </div>
+            </div>
 
-</section>
+            <div class="divider"></div>
 
-<div class="black-separator"></div>
+            <!-- SAE 1.04 -->
+            <div class="tl-item reveal">
+                <div class="tl-card">
+                    <h3>SAE 1.04 — Se présenter sur Internet</h3>
+                    <p>Création d'un site internet en HTML/CSS représentant mon CV en ligne.</p>
+                    <p>Compétence BUT RT : <strong>UE3 [Programmer]</strong></p>
+                    <div class="pills">
+                        <span class="pill">AC13.02 — Lire, exécuter, corriger et modifier un programme</span>
+                    </div>
+                    <a class="btn" href="https://github.com/Enes3868/CV" target="_blank">
+                        <i class="fab fa-github"></i> Voir sur GitHub
+                    </a>
+                </div>
+            </div>
 
-<section id="pdf" style="text-align: center;">
-<h2>SAE1.04 Se présenter sur Internet</h2>
+            <div class="divider"></div>
 
-<p>
-Dans cet SAE, j'ai créé un site internet avec HTML/CSS qui représente mon cv
-</p>
+            <!-- SAE 1.03 -->
+            <div class="tl-item reveal">
+                <div class="tl-card">
+                    <h3>SAE 1.03 — Découvrir un dispositif de transmission</h3>
+                    <p>Durant cette SAE, nous avons découvert et expérimenté la technologie Wi-Fi.</p>
+                    <p>Compétence BUT RT : <strong>UE2 [Connecter]</strong></p>
+                    <div class="pills">
+                        <span class="pill">AC12.01 — Mesurer, analyser et commenter les signaux</span>
+                        <span class="pill">AC12.03 — Déployer des supports de transmission</span>
+                        <span class="pill">AC12.05 — Communiquer avec un tiers</span>
+                    </div>
+                    <a class="btn" href="https://github.com/NolanHoarau/Acrylic" target="_blank">
+                        <i class="fab fa-github"></i> Voir sur GitHub
+                    </a>
+                </div>
+            </div>
 
-<p>
-Cette SAE m'a permis de developer la compétence du BUT RT : UE3 [Programmer] et notamment l'apprentissage critique :
-AC13.02 | Lire, exécuter, corriger et modifier un programme.
-</p>
+            <div class="divider"></div>
 
-</section>
+            <!-- GIF Python -->
+            <div class="tl-item reveal">
+                <div class="tl-card">
+                    <h3>Script Python — Démonstration</h3>
+                    <p>Aperçu animé d'un script Python réalisé dans le cadre des SAE.</p>
+                    <img src="gif.png" alt="Démonstration code Python" style="width:100%;height:auto;border-radius:10px;margin-top:12px;">
+                </div>
+            </div>
 
-<section id="github">
+            <a class="btn" href="index.html#projects">
+                <i class="fas fa-arrow-left"></i> Retour aux projets
+            </a>
 
-<h2>GitHub du projet</h2>
+        </div>
+    </main>
 
-<a class="btn" href="https://github.com/Enes3868/CV" target="_blank">
-<i class="fab fa-github"></i>
-Voir mon GitHub
-</a>
+    <script>
+        const header = document.getElementById('site-header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 10);
+        });
 
-</section>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
 
-<div class="black-separator"></div>
-
-<section id="pdf" style="text-align: center;">
-<h2>SAE1.03 Découvrir un dispositif de transmission</h2>
-
-<p>
-Durant cette SAE, nous avons pu découvrir la technologie Wifi
-</p>
-
-<p>
-Cette SAE m'a permis de developer la compétence du BUT RT : E2 [Connecter] et notamment les apprentissages critiques :
-AC12.01 : Mesurer, analyser et commenter les signaux,
-AC12.03 : Déployer des supports de transmission,
-AC12.05 : Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur.
-</p>
-
-</section>
-
-<section id="github">
-
-<h2>GitHub du projet</h2>
-
-<a class="btn" href="https://github.com/NolanHoarau/Acrylic" target="_blank">
-<i class="fab fa-github"></i>
-Voir mon GitHub
-</a>
-
-</section>
-
-<div class="black-separator"></div>
-
-<section id="pdf" style="text-align: center;">
-
-<h2>GIF code python</h2>
-
-<img src="gif.png" alt="Projet 3" style="max-width: 100%; height: auto;">
-
-<p>...</p>
-
-</section>
-
-<a class="btn" href="index.html#projects">Retour</a>
-
-</main>
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 
 </body>
 </html>
